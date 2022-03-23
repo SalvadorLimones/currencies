@@ -46,4 +46,147 @@ select {
   -webkit-appearance: none !important;
   border-radius: 0;
 }
+
+body {
+  background: #666;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+body .header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 5px 5px rgba(1, 1, 1, 0.2);
+          box-shadow: 0 5px 5px rgba(1, 1, 1, 0.2);
+  padding: 0 10px;
+  background: #fff;
+  color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .header span {
+  font-size: 36px;
+}
+
+body .header button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header button span {
+  color: #fff;
+  font-size: 36px;
+}
+
+body .money-card-container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 60px auto;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .money-card-container .money-card {
+  max-width: 400px;
+  margin: 30px 30px;
+  padding: 40px;
+  -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #fff;
+  color: #666;
+}
+
+body .money-card-container .money-card .money-sub-container {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #666;
+}
+
+body .money-card-container .money-card .money-sub-container .money-sub {
+  font-size: 80px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+body .money-card-container .money-card .money-text,
+body .money-card-container .money-card .money-title {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+body .money-card-container .money-card .money-title {
+  margin: 20px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+}
+
+body .money-card-container .money-card .movie-button {
+  width: calc(100% - 80px);
+  height: 60px;
+  position: absolute;
+  left: 40px;
+  bottom: -30px;
+  border: 1px solid #fff;
+  background: #666;
+  color: #fff;
+  font-size: 14px;
+}
+
+body .money-card-container .money-card .movie-button:hover {
+  border-color: #666;
+  background: #fff;
+  color: #666;
+}
 /*# sourceMappingURL=style.css.map */

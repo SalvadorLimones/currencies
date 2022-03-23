@@ -45,9 +45,10 @@ let beerHTML = "";
 money.map((money, i) => {
   beerHTML += `
     <div class="money-card">
+      <div class="money-sub-container">
+        <p class="money-sub">${money.sub}</p>
+      </div>
       <h3 class="money-title">${money.title}</h3>
-      <p class="money-sub">${money.sub}</p>
-      <div class="money-line"></div>
       <p class="money-text">${money.text}</p>
       <button class="money-button">
       Save

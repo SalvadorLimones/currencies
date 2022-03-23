@@ -1,5 +1,5 @@
-$primary: #242d38;
-$secondary: #efd592;
+$primary: #666;
+$secondary: #fff;
 
 * {
   margin: 0;
@@ -48,4 +48,116 @@ select {
   appearance: none !important;
   -webkit-appearance: none !important;
   border-radius: 0;
+}
+
+body {
+  background: $primary;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+
+  .header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, 0.2);
+    padding: 0 10px;
+    background: $secondary;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 36px;
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        color: $secondary;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .money-card-container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 60px auto;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .money-card {
+      max-width: 400px;
+      margin: 30px 30px;
+      padding: 40px;
+      box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background: $secondary;
+      color: $primary;
+
+      .money-sub-container {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $primary;
+
+        .money-sub {
+          font-size: 80px;
+          font-weight: 400;
+          color: $secondary;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+
+      .money-text,
+      .money-title {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .money-title {
+        margin: 20px 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $primary;
+      }
+
+      .movie-button {
+        width: calc(100% - 80px);
+        height: 60px;
+        position: absolute;
+        left: 40px;
+        bottom: -30px;
+        border: 1px solid $secondary;
+        background: $primary;
+        color: $secondary;
+        font-size: 14px;
+
+        &:hover {
+          border-color: $primary;
+          background: $secondary;
+          color: $primary;
+        }
+      }
+    }
+  }
 }
