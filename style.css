@@ -117,7 +117,7 @@ body .money-card-container {
 }
 
 body .money-card-container .money-card {
-  width: 300px;
+  width: 275px;
   height: 350px;
   margin: 30px 30px;
   padding: 40px;
@@ -160,7 +160,6 @@ body .money-card-container .money-card .money-sub-container .money-sub {
   font-size: 80px;
   font-weight: 400;
   color: #fff;
-  font-family: "Roboto", sans-serif;
 }
 
 body .money-card-container .money-card .money-text,
