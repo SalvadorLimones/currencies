@@ -104,7 +104,7 @@ body .header button span {
 body .money-card-container {
   max-width: 1200px;
   padding: 0 30px;
-  margin: 60px auto;
+  margin: 100px auto;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +117,8 @@ body .money-card-container {
 }
 
 body .money-card-container .money-card {
-  max-width: 400px;
+  width: 300px;
+  height: 350px;
   margin: 30px 30px;
   padding: 40px;
   -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
@@ -130,6 +131,9 @@ body .money-card-container .money-card {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #fff;
@@ -172,19 +176,42 @@ body .money-card-container .money-card .money-title {
   border-bottom: 1px solid #666;
 }
 
-body .money-card-container .money-card .movie-button {
-  width: calc(100% - 80px);
-  height: 60px;
+body .money-card-container .money-card .money-button {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
   position: absolute;
-  left: 40px;
-  bottom: -30px;
-  border: 1px solid #fff;
-  background: #666;
-  color: #fff;
+  left: 50%;
+  bottom: -25px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px solid #666;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+body .money-card-container .money-card .money-button p {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 14px;
 }
 
-body .money-card-container .money-card .movie-button:hover {
+body .money-card-container .money-card .money-button span {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 36px;
+}
+
+body .money-card-container .money-card .money-button:hover {
   border-color: #666;
   background: #fff;
   color: #666;

@@ -51,7 +51,8 @@ money.map((money, i) => {
       <h3 class="money-title">${money.title}</h3>
       <p class="money-text">${money.text}</p>
       <button class="money-button">
-      Save
+      <p>Save</p>
+      <span class="material-icons">arrow_forward</span>
     </button>
     </div>
   `;
